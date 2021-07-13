@@ -27,17 +27,19 @@ table,tr,th,td {
     margin-left: 43%;
 }
 
+main{
+    text-align: center;
+}
 #div1 {
-    position: fixed;
+    /* position: fixed; */
     left: 40%;
     top: 200px;
 }
 
 .logo{
-    margin-left: 680px;
+    margin-left: 380px;
 
 }
-
 #foot{
     position: relative;
     text-align: center;
@@ -45,4 +47,15 @@ table,tr,th,td {
     background-color: black;
     padding: 20px;
     bottom: -110px;
+}
+#foot2{
+    text-align: center;
+    color: rgb(235, 231, 231) ;
+    background-color: black;
+    padding: 50px;
+    bottom: -110px;
+}
+.div1 div{
+padding: 13px ;
+    display: inline-block;
 }
