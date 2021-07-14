@@ -125,6 +125,31 @@ new Store('paris', 20, 38, 2.3);
 new Store('lima', 2, 16, 4.6);
 
 
+let form = document.getElementById('form');
+
+form.addEventListener('submit', submitt);
+
+function submitt(event){
+
+  event.preventDefault();
+
+  let name = event.target.name.value;
+  let minCustomers = event.target.minCustomers.value;
+  let maxCustomers = event.target.maxCustomers.value;
+  let avgCookies = event.target.avgCookies.value;
+
+  let addedarea = new Store (name, minCustomers, maxCustomers, avgCookies);
+
+  // console.log(addedarea.name);
+
+  addedarea.averageCustomersPerHour();
+  addedarea.cookiesPerCustomer();
+  addedarea.render();
+
+
+}
+
+
 makeHeaderRow();
 renderAllStores();
 makeFooterRow();
